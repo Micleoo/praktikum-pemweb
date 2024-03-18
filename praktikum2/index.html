@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata untuk mendefinisikan karakter set, tampilan, deskripsi, dan kata kunci -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daud Muhajir">
+    <meta name="keyword" content="Belajar HTML, Belajar Web">
+    <meta name="description" content="Praktikum modul 2">
+    <meta name="robots" content="index, follow">
+    <!-- Judul halaman -->
+    <title>Pengenalan HTML Tingkat Lanjut</title>
+</head>
+
+<body>
+    <!-- Teks yang ditampilkan dalam tebal -->
+    <strong>Praktikum Pemrograman Web html</strong>
+    <!-- Garis horizontal -->
+    <hr>
+
+    <!-- Judul utama -->
+    <h1>Pengenalan HTML Tingkat Lanjut</h1> 
+    <!-- Garis horizontal -->
+    <hr>
+
+    <div>
+        <!-- Judul elemen form -->
+        <h2>Element Form</h2>
+        <!-- Garis horizontal -->
+        <hr>
+        <!-- Formulir untuk mengumpulkan data -->
+        <form action="" method="get">
+            <!-- Input teks -->
+            <p><input type="text" name="text_form" size="20"></p>
+            <!-- Input teks dengan placeholder -->
+            <p><input type="text" name="text_form" size="20" placeholder="Dengan Placeholder"></p>
+            <!-- Input teks readonly -->
+            <p><input type="text" name="readonly_form" size="20" value="Ini Readonly" readonly></p>
+            <!-- Input teks yang dinonaktifkan -->
+            <p><input type="text" name="disabled_form" value="Ini Disabled" size="20" disabled></p>
+            <!-- Input teks yang diperlukan -->
+            <p><input type="text" name="required_form" size="20" required placeholder="Ini Required"></p>
+            
+            <!-- Input email -->
+            <p><input type="email" name="email_form" size="20" placeholder="Ini Email"></p>
+            <!-- Input password -->
+            <p><input type="password" name="password_form" size="20" placeholder="Ini Password"></p>
+            <!-- Input file -->
+            <p><input type="file" name="file"></p>
+            <!-- Input hidden -->
+            <p><input type="hidden" name="hidden_form" value="123456"></p>
+            
+            <!-- Textarea -->
+            <p><textarea name="textarea_form" cols="30" rows="5" placeholder="Ini Textarea"></textarea></p>
+            
+            <!-- Dropdown -->
+            <p>
+                <select name="pilihan">
+                    <option value=1>Pilihan 1</option>
+                    <option value=2 selected>Pilihan 2</option>
+                    <option value=3>Pilihan 3</option>
+                    <option value=4>Pilihan 4</option>
+                    <option value=5>Pilihan 5</option>
+                </select>
+            </p>
+            
+            <!-- Radio button -->
+            <p>
+                <input type="radio" name="radio" value="radio1" id="radio1" checked><label for="radio1">Radio 1</label>
+                <input type="radio" name="radio" value="radio2" id="radio2"><label for="radio2">Radio 2</label>
+            </p>
+            
+            <!-- Checkbox -->
+            <p>
+                <input type="checkbox" name="checkbox1" value="checkbox1" id="checkbox1"><label for="checkbox1">Checkbox 1</label>
+                <input type="checkbox" name="checkbox2" value="checkbox2" id="checkbox2"><label for="checkbox2">Checkbox 2</label>
+            </p>
+            
+            <!-- Tombol reset, submit, dan button -->
+            <p>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Simpan">
+                <input type="button" value="Button" onclick="">
+            </p>
+        </form>
+    </div>
+
+    <div>
+        <!-- Judul elemen embed -->
+        <h2>Element Embed</h2>
+        <!-- Garis horizontal -->
+        <hr>
+        <!-- Menyisipkan file PDF -->
+        <embed src="aset/file.pdf" width="800" height="1000" type="application/pdf">
+    </div>
+
+    <div>
+        <!-- Judul elemen iframe -->
+        <h2>Element Iframe</h2>
+        <!-- Garis horizontal -->
+        <hr>
+        <!-- Menyisipkan video YouTube -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/v8fKPAIVObY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div>
+        <!-- Judul elemen Semantic HTML5 -->
+        <h2>Element Semantic HTML5</h2>
+        <!-- Garis horizontal -->
+        <hr>
+        <!-- Elemen Semantic HTML5 -->
+        <header>Ini Header</header>
+        <main>Ini Main</main>
+        <section>Ini Section</section>
+        <aside>Ini Aside</aside>
+        <nav>Ini Nav</nav>
+        <footer>Ini Footer</footer>
+    </div>
+
+    <!-- Garis horizontal -->
+    <br><br>
+    <div>
+        <hr>
+        <!-- Teks yang ditampilkan dalam tebal -->
+        <strong>Program Studi Informatika Telkom University Surabaya</strong>
+    </div>
+
+</body>
+</html>
