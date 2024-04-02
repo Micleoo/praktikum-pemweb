@@ -1,0 +1,43 @@
+.calculator {
+    width: 250px;
+    margin: 50px auto;
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:darkorange;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+button.wide {
+    grid-column: span 2; /* Menyatakan tombol '0' mengambil 2 kolom */
+}
+
+
+.clear {
+    grid-column: span 2;
+}
