@@ -111,18 +111,6 @@ const diProses = (e) => {
     errors = true;
   }
 
-  // Validasi checkbox syarat
-  let syaratError = "";
-  if (!syaratNode.checked) {
-    syaratError = "Syarat dan ketentuan harus disetujui";
-    errors = true;
-  }
-
-  if (syaratError !== "") {
-    syaratSpanNode.innerHTML = syaratError;
-    errors = true;
-  }
-
   if (errors) {
     e.preventDefault();
   }
@@ -147,4 +135,3 @@ passNode.addEventListener("focus", hapusError);
 phoneNode.addEventListener("focus", hapusError);
 genderNode.addEventListener("focus", hapusError);
 websiteNode.addEventListener("focus", hapusError);
-syaratNode.addEventListener("focus", hapusError);
