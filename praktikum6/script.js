@@ -104,12 +104,16 @@ const diProses = (e) => {
   if (websiteNode.value.trim() === "") {
     websiteError = "Alamat Website harus diisi";
     errors = true;
-  }
-
-  if (websiteError !== "") {
-    websiteSpanNode.innerHTML = websiteError;
+  }  else if (!isValidWebsite(websiteNode.value.trim())) {
+    websiteError = "Isi alamat website yang sesuai";
     errors = true;
   }
+
+if (websiteError !== "") {
+  websiteSpanNode.innerHTML = websiteError;
+  errors = true;
+}
+
 
   if (errors) {
     e.preventDefault();
@@ -121,6 +125,12 @@ function isValidEmail(email) {
   const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return emailRegex.test(String(email).toLowerCase());
 }
+
+// Function untuk memeriksa format alamat website
+function isValidWebsite(website) {
+    const websiteRegex = /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/;
+    return websiteRegex.test(website);
+  }
 
 const hapusError = (e) => {
   e.target.style.border = "";
