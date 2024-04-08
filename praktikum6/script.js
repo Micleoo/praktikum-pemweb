@@ -21,9 +21,6 @@ let genderSpanNode = document.getElementById("genderSpan");
 let websiteNode = document.getElementById("website");
 let websiteSpanNode = document.getElementById("websiteSpan");
 
-let syaratNode = document.getElementById("syarat");
-let syaratSpanNode = document.getElementById("syaratSpan");
-
 const diProses = (e) => {
   let errors = false;
 
